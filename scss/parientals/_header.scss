@@ -4,32 +4,3 @@ header {
     top: 0;
     z-index: 1000;
 }
-
-//Init APP
-.init-app-container {
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url(../img/personaje.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    & h5 {
-        font-size: 20px;
-        line-height: 25px;
-        padding: 0 1rem;
-    }
-}
-
-//Container Botones
-.container-btn {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    & .btn-large {
-        font-weight: bolder;
-    }
-    & .arrow-left {
-        position: absolute;
-        right: 7%;
-    }
-}

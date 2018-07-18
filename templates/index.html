@@ -8,7 +8,7 @@
     <title>Showfy - MVP</title>
     <meta name="description" content="La forma fácil, entretenida e inteligente de contratar artistas para tus eventos, fiestas, entretención y mucho más.">
     <!-- Type -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
@@ -58,47 +58,75 @@
 
     <!-- Open Header -->
     <header>
-        <ul id="slide-out" class="side-nav">
+        <ul id="slide-out-artist" class="side-nav">
             <li>
                 <div class="user-view">
                     <div class="background mvp-gradient">
                     </div>
-                    <a href="#!user"><img class="circle" src="http://archives.materializecss.com/0.100.2/images/yuna.jpg"></a>
-                    <a href="#!name"><span class="white-text name">LOS MVP</span></a>
-                    <a href="#!email"><span class="white-text email">grafiaviles@gmail.com</span></a>
+                    <a href="#!user"><img class="circle materialboxed" src="img/arcangel.png"></a>
+                    <a href="#!name"><span class="white-text name bolder"><b>Austin Santos</b></span></a>
+                    <a href="#!email"><span class="white-text email">Ranking Nº 2</span></a>
                 </div>
             </li>
-            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-            <li><a href="#!">Second Link</a></li>
+            <li><a href="#!"><i class="material-icons">person</i>Mi Perfil</a></li>
+            <li><a href="#!"><i class="material-icons">today</i>Mis Eventos</a></li>
+            <li><a href="#!"><i class="material-icons">payment</i>Transacciones</a></li>
+            <li><a href="#!"><i class="material-icons">favorite_border</i>Fanslover</a></li>
+            <li><a href="#!"><i class="material-icons">question_answer</i>Mensajes</a></li>
             <li>
                 <div class="divider"></div>
             </li>
-            <li><a class="subheader">Subheader</a></li>
-            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            <li><a class="subheader">Cerrar sesión</a></li>
         </ul>
-        <a href="#" data-activates="slide-out" class="hide button-collapse"><i class="material-icons white-text small">sort</i></a>
+        <a href="#" data-activates="slide-out-artist" class="button-collapse"><img class="circle" width="45" src="img/arcangel.png"></a>
     </header>
     <!-- End Header -->
 
     <!-- Open Content Main -->
     <main>
-        <!-- Init App -->
-        <div class="container" style="width: 100%; overflow: hidden;">
-            <div class="row">
-                <div class="valign-wrapper init-app-container">
-                    <div class="center col s12">
-                        <img src="img/logotipo.png" class="responsive-img" width="250">
-                        <h5 class="white-text">La forma fácil, entretenida e inteligente de contratar a <b>Músicos</b></h5>
+        <!-- STEP 1 COVER -->
+        <section>
+            <!-- Init App -->
+            <div class="container-app">
+                <div class="row">
+                    <!-- Cover presentation -->
+                    <div class="valign-wrapper init-app-container">
+                        <div class="center col s12">
+                            <img src="img/logotipo.png" class="responsive-img" width="250">
+                            <h5 class="white-text">La forma fácil, entretenida e inteligente de contratar a <b>Músicos</b></h5>
+                        </div>
+                    </div>
+                    <!-- Cover presentation -->
+                </div>
+            </div>
+            <!-- botones -->
+            <div class="container-btn">
+                <div class="row">
+                    <!-- Modal Trigger -->
+                    <a href="#modal1" class="show-on-large modal-trigger col s12 waves-effect waves-light btn-large yellow darken-2 btn-primary">Ingresar <i class="material-icons small arrow-left">arrow_forward</i></a>
+                </div>
+            </div>
+        </section>
+        <!-- STEP 1 COVER -->
+
+        <!-- STEP 2 LOGIN -->
+        <section>
+            <!-- Init App -->
+            <div class="container-app">
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal bottom-sheet">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- botones -->
-        <div class="container-btn">
-            <div class="row">
-                <a class="col s12 waves-effect waves-light btn-large yellow darken-2 btn-primary">Ingresar <i class="material-icons small arrow-left">arrow_forward</i></a>
-            </div>
-        </div>
+        </section>
+        <!-- STEP 2 LOGIN -->
+
     </main>
     <!-- End Content Main -->
 

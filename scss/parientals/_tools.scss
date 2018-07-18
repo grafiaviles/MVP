@@ -12,7 +12,7 @@ body {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     min-height: 100vh;
 }
 
@@ -21,8 +21,20 @@ body {
     background-image: linear-gradient(180deg, #d60b52 0%, #662483 100%);
 }
 
-.btn-primary {
-    font-weight: 700;
+//Container Botones
+.container-btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    //btn 100%
+    & .btn-primary {
+        font-weight: 700;
+        border-radius: 0;
+    }
+    & .arrow-left {
+        position: absolute;
+        right: 10px;
+    }
 }
 
 //Cargador
@@ -57,4 +69,8 @@ body {
 
 .row {
     margin-bottom: 0!important;
+}
+
+.bolder {
+    font-weight: 700;
 }

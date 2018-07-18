@@ -1,0 +1,33 @@
+//Full container APP
+.container-app {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* Step 1 */
+
+.init-app-container {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../img/personaje.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    & h5 {
+        font-size: 20px;
+        line-height: 25px;
+        padding: 0 2rem;
+    }
+}
+
+
+/* Step 2 */
+
+.modal.bottom-sheet {
+    top: 0;
+    max-height: 100%;
+    & .modal-content {
+        min-height: 90%;
+    }
+}
