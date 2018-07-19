@@ -2,3 +2,22 @@
 i.material-icons {
     margin-right: 20px!important;
 }
+
+//RANKING - SEGUIDORES
+.number-user {
+    position: relative;
+    padding-bottom: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    & a.small {
+        padding: 5px 0;
+        line-height: normal;
+        font-size: 12px;
+    }
+    & span {
+        line-height: normal;
+        padding: 0 10px;
+        position: relative;
+        opacity: .4;
+    }
+}
