@@ -4,6 +4,23 @@
     overflow: hidden;
 }
 
+//Container Botones
+.container-btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    //btn 100%
+    & .btn-primary {
+        font-weight: 700;
+        border-radius: 0;
+    }
+    & .arrow-left {
+        position: absolute;
+        right: 0%;
+        font-size: 1.6rem;
+    }
+}
+
 
 /* Step 1 */
 
@@ -28,6 +45,39 @@
     top: 0;
     max-height: 100%;
     & .modal-content {
-        min-height: 90%;
+        min-height: 100%;
+    }
+    //Login Redes
+    & .content-login-redes {
+        position: relative;
+        & .login-redes:first-child {
+            border-radius: 3px 0 0 3px;
+        }
+        & .login-redes:last-child {
+            border-radius: 0 3px 3px 0;
+        }
+    }
+    //Radio
+    .input-radio {
+        margin: 1rem 0;
+        position: relative;
+        padding: 0;
+        //border-bottom: 1px solid rgba(253, 216, 53, 0.7);
+        & .valign-wrapper {
+            align-items: center;
+            justify-content: space-between;
+            & p {
+                margin-bottom: 10px;
+                width: 33.3%;
+                @media screen and (max-width: 321px) {
+                    width: auto;
+                    flex: auto;
+                }
+            }
+        }
+    }
+    .input-radio-1 {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding-bottom: 1rem;
     }
 }

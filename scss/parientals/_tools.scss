@@ -21,22 +21,6 @@ body {
     background-image: linear-gradient(180deg, #d60b52 0%, #662483 100%);
 }
 
-//Container Botones
-.container-btn {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    //btn 100%
-    & .btn-primary {
-        font-weight: 700;
-        border-radius: 0;
-    }
-    & .arrow-left {
-        position: absolute;
-        right: 10px;
-    }
-}
-
 //Cargador
 #preloader {
     width: 100%;
@@ -51,7 +35,7 @@ body {
     background-image: linear-gradient(180deg, #d60b52 0%, #662483 100%);
     top: 0;
     & .cargador {
-        width: 100px;
+        width: 60px;
         animation: cargador 1s ease-in-out infinite alternate;
     }
     & .text-cargando {
@@ -72,5 +56,124 @@ body {
 }
 
 .bolder {
-    font-weight: 700;
+    font-weight: 700!important;
+}
+
+.semi-bolder {
+    font-weight: 500!important;
+}
+
+.light {
+    font-weight: 400!important;
+}
+
+//Form
+input {
+    border-bottom: 1px solid rgba(253, 216, 53, 0.7)!important;
+}
+
+
+/* label color */
+
+.input-field {
+    padding: 0!important;
+}
+
+.input-field label {
+    color: #fff!important;
+    left: 0!important;
+}
+
+
+/* icon prefix focus color */
+
+.input-field .prefix {
+    margin-top: .5rem;
+    color: white;
+}
+
+.input-field .prefix.active {
+    color: $color-5;
+}
+
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label,
+.input-field input[type=email]:focus+label {
+    color: #fff!important;
+}
+
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid $color-5!important;
+    box-shadow: 0 1px 0 0 $color-5!important;
+}
+
+
+/* valid color */
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+
+
+/* invalid color */
+
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+
+
+/* Radio */
+
+[type="radio"]+label:before,
+[type="radio"]+label:after {
+    width: 18px;
+    height: 18px;
+}
+
+[type="radio"]:not(:checked)+label:before,
+[type="radio"]:not(:checked)+label:after {
+    border: 2px solid $color-4;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"].with-gap:checked+label:after {
+    background-color: $color-5;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"].with-gap:checked+label:before,
+[type="radio"].with-gap:checked+label:after {
+    border: 2px solid $color-5;
+}
+
+//Switch
+.switch {
+    margin-top: 1.5rem;
+}
+
+.switch label .lever {
+    width: 44px;
+    height: 20px;
+}
+
+.switch label .lever:before,
+.switch label .lever:after {
+    width: 26px;
+    height: 26px;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: rgba(253, 216, 53, 0.5);
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #fdd835;
 }

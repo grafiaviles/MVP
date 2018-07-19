@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
@@ -14,10 +15,11 @@ gulp.task('sass', function() {
         .pipe(sass({ outputStyle: ['compressed'] }).on('error', sass.logError))
         .pipe(autoprefixer({ browsers: ['last 10 versions'] }))
         .pipe(concat('main.min.css'))
+        .pipe(sourcemaps.write('./assets'))
         .pipe(gulp.dest('./www/css'))
         .pipe(browserSync.stream());
 });
-//  Obs Sass 
+//  Obs Sass /
 gulp.task('obsSass', function() {
     gulp.watch('./scss/**/*.scss', ['sass']);
 });
