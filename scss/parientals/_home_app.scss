@@ -1,0 +1,109 @@
+/* Contenido Home */
+
+.home-container {
+    min-height: 100%;
+    height: auto;
+    background: $color-4;
+    border-bottom: solid 5px $line;
+    padding: 0 .5rem;
+    //Data Events
+    & .data-events {
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 1rem;
+        & .separator {
+            width: 1px;
+            height: 30px;
+            background: $line;
+        }
+        & .data-event-text {
+            font-size: 12px;
+            & .number {
+                font-size: 14px;
+                margin-bottom: 0;
+                line-height: normal;
+                font-weight: 700;
+            }
+        }
+    }
+    //Modulos
+    .cont-module {
+        padding: 1rem;
+        & .card-action {
+            i {
+                position: relative;
+                right: -10px;
+            }
+        }
+    }
+}
+
+i.icon-modules {
+    padding: 0;
+    margin-right: 0!important;
+}
+
+.home-container:last-child {
+    margin-bottom: 4rem;
+}
+
+
+/* Menu Top */
+
+.container-menu-top {
+    & .brand-logo {
+        margin-left: .5rem;
+        & img {
+            top: 7px;
+            position: relative;
+            width: 115px;
+        }
+    }
+    & .icon-search {
+        margin-right: 5px!important;
+        font-size: 2rem;
+    }
+}
+
+
+/* Menu Bottom */
+
+.fixed-action-btn {
+    bottom: 70px;
+    right: 13px;
+}
+
+.container-menu-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -10px 20px -5px rgba(0, 0, 0, .1);
+    z-index: 1010;
+    & .nav-bottom-cont {
+        align-items: center;
+        justify-content: space-between;
+        & a {
+            margin: 0;
+            text-align: center;
+            width: 100%;
+            display: block;
+            & i {
+                text-align: center;
+                height: 55px;
+                line-height: 55px;
+                padding: 0;
+                margin: 0!important;
+                font-size: 2rem;
+                @media screen and (max-width: 321px) {
+                    font-size: 1.5rem;
+                }
+            }
+            & .user-btn {
+                position: relative;
+                top: 5px;
+            }
+        }
+    }
+}

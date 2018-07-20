@@ -26,15 +26,23 @@
 
 .init-app-container {
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     min-height: 100vh;
+    padding-bottom: 7rem;
     background-image: url(../img/personaje.png);
     background-repeat: no-repeat;
     background-position: center bottom;
+    & .logo {
+        margin-left: 2rem;
+    }
     & h5 {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 25px;
         padding: 0 2rem;
+        margin-bottom: 5px;
+    }
+    & h5:last-child {
+        margin-top: 0;
     }
 }
 

@@ -68,7 +68,8 @@ gulp.task('live-server', ['sass', 'compressJs'], function() {
     browserSync.init({
         server: "./www"
     });
-    gulp.watch("**/*", { cwd: './www/' }, browserSync.reload);
+    //gulp.watch("**/*", { cwd: './www/' }, browserSync.reload);
+    //gulp.watch("./www/*.html").on('change', browserSync.reload); //OBS HTML FILES
 
 });
 
