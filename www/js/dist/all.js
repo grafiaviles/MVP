@@ -6,3 +6,6 @@ $('.materialboxed').materialbox();
 
 /* Modales */
 $('.modal').modal();
+
+/* Dropdown */
+$('.dropdown-button').dropdown();

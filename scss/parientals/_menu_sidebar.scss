@@ -1,25 +1,39 @@
 //Sidebar Menu
-.side-nav {}
-
-i.material-icons {
-    margin-right: 20px!important;
-}
-
-//RANKING - SEGUIDORES
-.number-user {
-    position: relative;
-    padding-bottom: 1rem;
-    align-items: center;
-    justify-content: flex-start;
-    & a.small {
-        padding: 5px 0;
-        line-height: normal;
-        font-size: 11px;
-    }
-    & span {
-        line-height: normal;
-        padding: 0 10px;
+.side-nav-artist {
+    //RANKING - SEGUIDORES
+    .number-user {
         position: relative;
-        opacity: .4;
+        padding-bottom: 1rem;
+        align-items: center;
+        justify-content: flex-start;
+        & a.small {
+            padding: 5px 0;
+            line-height: normal;
+            font-size: 11px;
+        }
+        & span {
+            line-height: normal;
+            padding: 0 10px;
+            position: relative;
+            opacity: .4;
+        }
+    }
+    //DROPDOWN
+    & a.link-sidebar-user {
+        padding: 0 16px;
+    }
+    & i.material-icons {
+        margin-right: 20px!important;
+    }
+    & i.arrow-r {
+        margin-right: 0!important;
+    }
+    & .collapsible-body {
+        & .link-dropdown {
+            padding: 0 16px 0 35px;
+            & i.material-icons {
+                margin-right: 0!important;
+            }
+        }
     }
 }

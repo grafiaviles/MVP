@@ -11,14 +11,13 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: nowrap;
-        padding: 1rem;
-        & .separator {
-            width: 1px;
-            height: 30px;
-            background: $line;
-        }
+        padding: .7rem 0 0 0;
+        position: relative;
         & .data-event-text {
             font-size: 12px;
+            padding-bottom: .7rem;
+            width: 33.3%;
+            position: relative;
             & .number {
                 font-size: 14px;
                 margin-bottom: 0;
@@ -26,14 +25,30 @@
                 font-weight: 700;
             }
         }
+        & .data-event-text:first-child::after {
+            position: absolute;
+            content: "";
+            height: 3px;
+            width: 70%;
+            bottom: 0;
+            left: 50%;
+            background: $color-1;
+            transform: translateX(-50%);
+        }
     }
     //Modulos
     .cont-module {
         padding: 1rem;
         & .card-action {
-            i {
-                position: relative;
-                right: -10px;
+            & .link-card-action {
+                font-size: .9rem;
+                /* color: $color-5!important; */
+                font-weight: 700;
+            }
+            & i {
+                position: absolute;
+                right: 7px;
+                top: 13px;
             }
         }
     }
@@ -52,6 +67,15 @@ i.icon-modules {
 /* Menu Top */
 
 .container-menu-top {
+    & .title-module {
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        font-size: 1.5rem;
+        @media screen and (max-width: 321px) {
+            font-size: 1.3rem;
+        }
+    }
     & .brand-logo {
         margin-left: .5rem;
         & img {
@@ -63,6 +87,9 @@ i.icon-modules {
     & .icon-search {
         margin-right: 5px!important;
         font-size: 2rem;
+        @media screen and (max-width: 321px) {
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -102,7 +129,7 @@ i.icon-modules {
             }
             & .user-btn {
                 position: relative;
-                top: 5px;
+                top: 3px;
             }
         }
     }

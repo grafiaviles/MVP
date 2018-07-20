@@ -24,23 +24,27 @@ body {
 
 //Colores
 .color-1 {
-    color: $color-1;
+    color: $color-1!important;
 }
 
 .color-2 {
-    color: $color-2;
+    color: $color-2!important;
 }
 
 .color-3 {
-    color: $color-3;
+    color: $color-3!important;
 }
 
 .color-4 {
-    color: $color-4;
+    color: $color-4!important;
 }
 
 .color-5 {
-    color: $color-5;
+    color: $color-5!important;
+}
+
+.color-6 {
+    color: $grey-dark-corp!important;
 }
 
 //Cargador
@@ -89,9 +93,39 @@ body {
     font-weight: 400!important;
 }
 
-//Section
+//Section Title + Check estado
 .section {
     padding-top: 0!important;
+    h5 {
+        font-size: 1.3rem;
+        margin-bottom: .5rem;
+        color: $color-6;
+        @media screen and (max-width: 321px) {
+            font-size: 1.1rem;
+        }
+    }
+    p {
+        font-size: .8rem;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        i {
+            font-size: 1rem;
+            margin-right: .5rem;
+            padding: 1px;
+            border-radius: 50%;
+        }
+        i.finalizado {
+            border: solid 1px $color-7;
+        }
+        i.confirmar {
+            border: solid 1px orange;
+        }
+        i.cancelado {
+            border: solid 1px red;
+        }
+    }
 }
 
 //Form

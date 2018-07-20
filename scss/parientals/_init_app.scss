@@ -16,7 +16,7 @@
     }
     & .arrow-left {
         position: absolute;
-        right: 0%;
+        right: 3%;
         font-size: 1.6rem;
     }
 }
@@ -28,10 +28,12 @@
     justify-content: center;
     align-items: flex-end;
     min-height: 100vh;
-    padding-bottom: 7rem;
     background-image: url(../img/personaje.png);
     background-repeat: no-repeat;
     background-position: center bottom;
+    & .content-cover {
+        padding-bottom: 7rem;
+    }
     & .logo {
         margin-left: 2rem;
     }
